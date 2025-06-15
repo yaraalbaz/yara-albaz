@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume - Yara Nidal Albaz</title>
+  <style>
+    body {
+      background-color: #f7f0fa;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 700px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(106, 27, 154, 0.15);
+    }
+
+    .profile-pic {
+      display: block;
+      margin: 0 auto 20px;
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+
+    h1.name {
+      text-align: center;
+      color: #6a1b9a;
+      font-size: 32px;
+      margin: 20px auto 10px;
+      padding: 10px 15px;
+      background-color: #f0e6fa;
+      border-radius: 8px;
+      width: fit-content;
+      display: block;
+    }
+
+    .toggle-all-btn {
+      background-color: #4a0072;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      display: block;
+      margin: 10px auto 25px;
+      transition: background-color 0.3s ease;
+    }
+    .toggle-all-btn:hover {
+      background-color: #6a1b9a;
+    }
+
+    .contact {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #5a0e8a;
+    }
+
+    .contact a {
+      color: #5a0e8a;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .section-title {
+      font-size: 22px;
+      color: #6a1b9a;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #6a1b9a;
+      padding-bottom: 4px;
+      font-weight: 600;
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .section-title:hover {
+      color: #9c27b0;
+    }
+
+    .section-title.active {
+      color: #d188e0; 
+    }
+
+    .section-content {
+      display: none;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #444;
+      padding-left: 20px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+    }
+
+    .certificates-images {
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .certificates-images figure {
+      flex: 1 1 45%;
+      margin: 0;
+    }
+
+    .certificates-images img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .certificates-images img:hover {
+      transform: scale(1.02);
+    }
+
+    .certificates-images figcaption {
+      font-size: 14px;
+      text-align: center;
+      color: #6a1b9a;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px 15px;
+      }
+      h1.name {
+        font-size: 26px;
+      }
+      .section-title {
+        font-size: 18px;
+      }
+      .section-content, ul {
+        font-size: 14px;
+        padding-left: 15px;
+      }
+      .certificates-images figure {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="profile.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="profile.jpg" alt="Yara Nidal Albaz" class="profile-pic" />
+      </a>
+      <h1 class="name">Yara Nidal Albaz</h1>
+      <button class="toggle-all-btn" onclick="toggleAll()">Hide All Sections</button>
+    </header>
+
+    <section class="contact">
+      <h2 class="section-title">Contact Information</h2>
+      <div class="section-content">
+        <p>📞 <a href="tel:0598753203">0598753203</a></p>
+        <p>✉️ <a href="mailto:yara2004nidal@gmail.com">yara2004nidal@gmail.com</a></p>
+      </div>
+    </section>
+
+    <section class="education">
+      <h2 class="section-title">Education</h2>
+      <div class="section-content">
+        <p>University: Arab American University (AAUP)</p>
+        <p>Major: Management Information Systems (MIS)</p>
+        <p>Period: 2022 - 2026</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-content">
+        <p>I am a student at the Arab American University majoring in MIS. I have been working in photography since high school, and I really love taking photos. I also enjoy horse riding and exploring new adventures. My high school stream was literary. I love to be creative and constantly seek to improve myself. I always pay close attention to details, which helps me deliver high-quality work.</p>
+      </div>
+    </section>
+
+    <section class="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="section-content">
+        <ul>
+          <li>Worked in photography sessions covering all types</li>
+          <li>Volunteered in university orientation days for new students</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="courses">
+      <h2 class="section-title">Courses & Certificates</h2>
+      <div class="section-content">
+        <ul>
+          <li>AI and Machine Learning – 2025</li>
+          <li>Decision Support Systems – 2025</li>
+        </ul>
+        <div class="certificates-images">
+          <figure>
+            <a href="certificate1.jpg" target="_blank" title="AI and Machine Learning">
+              <img src="certificate1.jpg" alt="Certificate 1" />
+              <figcaption>AI and Machine Learning</figcaption>
+            </a>
+          </figure>
+          <figure>
+            <a href="certificate2.jpg" target="_blank" title="Decision Support Systems">
+              <img src="certificate2.jpg" alt="Certificate 2" />
+              <figcaption>Decision Support Systems</figcaption>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="section-content">
+        <ul>
+          <li>Microsoft Office</li>
+          <li>HTML, CSS Basics</li>
+          <li>Teamwork & Communication</li>
+          <li>Detail-oriented and creative</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="interests">
+      <h2 class="section-title">Interests</h2>
+      <div class="section-content">
+        <ul>
+          <li>Photography</li>
+          <li>Swimming</li>
+          <li>Horse Riding</li>
+          <li>Trying new adventures</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="languages">
+      <h2 class="section-title">Languages</h2>
+      <div class="section-content">
+        <ul>
+          <li>Arabic – Native</li>
+          <li>English – Intermediate</li>
+          <li>Turkish – Intermediate</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    
+    document.querySelectorAll('.section-title').forEach(title => {
+      title.addEventListener('click', () => {
+        const content = title.nextElementSibling;
+        const isVisible = content.style.display === 'block';
+
+        content.style.display = isVisible ? 'none' : 'block';
+        title.classList.toggle('active', !isVisible);
+      });
+    });
+
+    
+    let sectionsVisible = true;
+    function toggleAll() {
+      const contents = document.querySelectorAll('.section-content');
+      const titles = document.querySelectorAll('.section-title');
+      const button = document.querySelector('.toggle-all-btn');
+
+      contents.forEach(content => {
+        content.style.display = sectionsVisible ? 'none' : 'block';
+      });
+
+      titles.forEach(title => {
+        title.classList.toggle('active', !sectionsVisible);
+      });
+
+      button.textContent = sectionsVisible ? 'Show All Sections' : 'Hide All Sections';
+      sectionsVisible = !sectionsVisible;
+    }
+  </script>
+</body>
+</html>
